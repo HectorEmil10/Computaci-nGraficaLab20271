@@ -39,6 +39,12 @@
     <None Include="Shader\lamp.vs">
       <Filter>Archivos de origen\shaders</Filter>
     </None>
+    <None Include="Shader\lighting.frag">
+      <Filter>Archivos de origen\shaders</Filter>
+    </None>
+    <None Include="Shader\lighting.vs">
+      <Filter>Archivos de origen\shaders</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h">
@@ -46,7 +52,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Texturizado.cpp">
+    <ClCompile Include="Iluminacion.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
