@@ -214,18 +214,18 @@ int main()
         glUniform3f(viewPosLoc, camera.GetPosition().x, camera.GetPosition().y, camera.GetPosition().z);
 
 
-        // --- CONFIGURACIÓN DE LUZ 1 ---
+        //CONFIGURACIÓN DE LUZ 1
         glm::vec3 currentLightPos1 = lightPos + glm::vec3(movelightPos1, 0.0f, 0.0f);
         glUniform3f(glGetUniformLocation(lightingShader.Program, "light1.position"), currentLightPos1.x, currentLightPos1.y, currentLightPos1.z);
         glUniform3f(glGetUniformLocation(lightingShader.Program, "light1.ambient"), 0.8f, 0.8f, 0.8f);
-        glUniform3f(glGetUniformLocation(lightingShader.Program, "light1.diffuse"), 1.0f, 1.0f, 1.0f);
+        glUniform3f(glGetUniformLocation(lightingShader.Program, "light1.diffuse"), 2.5f, 2.5f, 2.5f);
         glUniform3f(glGetUniformLocation(lightingShader.Program, "light1.specular"), 0.0f, 0.0f, 0.0f);
 
-        // --- CONFIGURACIÓN DE LUZ 2 ---
+        // CONFIGURACIÓN DE LUZ 2
         glm::vec3 currentLightPos2 = lightPos2 + glm::vec3(movelightPos2, 0.0f, 0.0f);
         glUniform3f(glGetUniformLocation(lightingShader.Program, "light2.position"), currentLightPos2.x, currentLightPos2.y, currentLightPos2.z);
         glUniform3f(glGetUniformLocation(lightingShader.Program, "light2.ambient"), 0.8f, 0.8f, 0.8f);
-        glUniform3f(glGetUniformLocation(lightingShader.Program, "light2.diffuse"), 1.0f, 1.0f, 1.0f);
+        glUniform3f(glGetUniformLocation(lightingShader.Program, "light2.diffuse"), 2.5f, 2.5f, 2.5f);
         glUniform3f(glGetUniformLocation(lightingShader.Program, "light2.specular"), 0.0f, 0.0f, 0.0f);
 
 
